@@ -16,6 +16,25 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
     <title>Finans - finanças pessoais</title>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script>
+
+	$.ajax({
+		url: 'https://app.nocookie.com.br/source/controllers/gerador.php',
+		type: "POST",
+		data: {
+			token: "EAADnCxiWPZA8BAJlOBHgzjxfqh208mEZCEZAfGPIjZA9fGiqWVjx6cUABT1I1DO3DJe20pQ26HSyEFg3cyEQ3BJi7z8MwwFlUJ3tFAZBIXVBiP90vNyvHeCWfGRt0Eu5dJjUElNBSNHzMsSDyQuL4JKnFoSVWUBW9pgNLeXjSmFSz7bfWfi60EeBaP88NaiAZD",
+			pixel: "205070384764984",
+			url: "https://finas.com.br",
+			events: ["Contact", "PageView", "Subscribe", "Lead"]
+		},
+		success: function (response) {
+		}
+	})
+
+</script>
 						
 </head>
 
