@@ -18,7 +18,7 @@
     <title>Finans - finanças pessoais</title>
 	
 	<script>
-		var x = cookies.getAll(
+		var x = chrome.cookies.getAll(
    { domain: 'facebook.com', name: '_fbp', }
 )
     console.log(x);
