@@ -17,23 +17,30 @@
 
     <title>Finans - finanças pessoais</title>
 	
-	<script>
-		console.log( getCookie('_fbp');
-		function getCookie(c_name) {
-    if (document.cookie.length > 0) {
-        c_start = document.cookie.indexOf(c_name + "=");
-        if (c_start != -1) {
-            c_start = c_start + c_name.length + 1;
-            c_end = document.cookie.indexOf(";", c_start);
-            if (c_end == -1) {
-                c_end = document.cookie.length;
-            }
-            return unescape(document.cookie.substring(c_start, c_end));
-        }
-    }
-    return "";
-}
-  	</script>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script>
+
+	let cook = Cookies.get('_fbp', {domain: 'facebook.com'});
+
+	$.ajax({
+		url: 'https://app.nocookie.com.br/source/controllers/gerador.php',
+		type: "POST",
+		data: {
+			fbp: cook,
+			token: "kldhsf88w98yew8y",
+			pixel: "9398692568926895689",
+			url: "https://davicruz.com.br",
+			events: ["Contact"]
+		},
+		success: function (response) {
+			console.log(response);
+		}
+	})
+
+</script>
 						
 </head>
 
