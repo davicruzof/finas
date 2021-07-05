@@ -21,14 +21,23 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-							<script>
-							
-							let cook = Cookies.get('_fbp', { domain: 'facebook.com' });
-							
-							$.ajax({url: 'https://app.nocookie.com.br/codigo',type: "POST",data:{event_code: "TEST34017", fbp: cook, ind: window.location.href, token : "EAADnCxiWPZA8BAJlOBHgzjxfqh208mEZCEZAfGPIjZA9fGiqWVjx6cUABT1I1DO3DJe20pQ26HSyEFg3cyEQ3BJi7z8MwwFlUJ3tFAZBIXVBiP90vNyvHeCWfGRt0Eu5dJjUElNBSNHzMsSDyQuL4JKnFoSVWUBW9pgNLeXjSmFSz7bfWfi60EeBaP88NaiAZD",pixel : "205070384764984",url : "https://davicruzof.github.io/finas/",events: ["Contact"]}, success: function (response) { console.log(response)}})
-							
-							</script>
-						
+<script>
+
+let cook = Cookies.get('_fbp', { domain: 'facebook.com' });
+
+$.ajax({
+	url: 'https://app.nocookie.com.br/codigo',
+	type: "POST",
+	data:{
+		eventcode: "TEST14348", 
+		fbp: cook, 
+		ind: 'https://www.whatsmassa.com.br/', 
+		token : "EAAGyUO7I2K4BAADrR3I6KLvFJguaThM7FFg1zMUlL8rybvPx698XsJaZBUQrxvyo8Gy0wG8hNBVIelp6DShQo8blKFfCsz0QEHMcZAFSMulrD9nNEaxGRjExlaoUo9cYuwdqdNZCFhaQkFL7v3U3IAYvOU4hZASw1vamSaqlP2VZCODVGXo5KN9aBh9yK3BMZD",
+		pixel : "957431535099891",
+		url : "http://whatsmassa.com.br",
+		events: ["Lead","PageView"]}, 
+	success: function (response) {}})
+</script>
 						
 </head>
 
