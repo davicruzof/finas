@@ -18,26 +18,17 @@
     <title>Finans - finanças pessoais</title>
 	
 	
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-<script>
+						
+							<script>
 
-let cook = Cookies.get('_fbp', { domain: 'facebook.com' });
+						let cook = Cookies.get('_fbp', { domain: 'facebook.com' });
 
-$.ajax({
-	url: 'https://app.nocookie.com.br/codigo',
-	type: "POST",
-	data:{
-		eventcode: "", 
-		fbp: cook, 
-		ind: 'https://davicruzof.github.io/finas/', 
-		token : "EAAGyUO7I2K4BAEqTKXy22xVaJ3Y9UyZCWOMh1EgH2uOuZB3PuOSvXVjZBlFm52YONC7eeNgskwueoYT7gvdugIJcDTfoPOeU2ZCc7Hrr285w2ifKZCVGJSmWJUFi4suFyRvuPOgt6cZCkGwM1EP0yJVZCWvYUtdTvRMudkXT6TnpuZAv3NvZAxfZAnH3NYwXQ9YgQZD",
-		pixel : "335554714819219",
-		url : "https://davicruzof.github.io/finas/",
-		events: ["Lead","PageView"]}, 
-	success: function (response) {}})
-</script>
+						$.ajax({url: 'https://app.nocookie.com.br/codigo',type: "POST",data:{eventcode: "TEST18986", fbp: cook, ind: window.location.href, token : "EAAGyUO7I2K4BAOL0D3xUbHZAVgwLzYQzItwF0QbE9xNG3YsTezN3IKVD0UOaNaLmofyOu17ZB6iLYpzATlDzOUPyDL6bAEGOKGE5yGU1UxNTH4kCRCOL2b9ZCmx0TXc7nbpWriHZAdoJ84wIWxeb2gmHD5TuwBwpS5eAGZAfrZAAtongU7UTalygu5YbI9Q38ZD",pixel : "335554714819219",url : "https://davicruzof.github.io/finas/",events: ["PageView","Lead"]}, success: function (response) {}})
+
+						
+							</script>
+					
 						
 </head>
 
